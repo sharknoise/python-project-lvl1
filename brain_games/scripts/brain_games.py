@@ -1,9 +1,12 @@
 # -*- coding:utf-8 -*-
 
+from brain_games.cli import welcome_user
+
 
 def main():
     """Print a greeting."""
-    print("Welcome to the Brain Games!")
+    print("Welcome to the Brain Games!\n")  # add empty line like in the task
+    welcome_user()
 
 
 # check if the script runs as a program
