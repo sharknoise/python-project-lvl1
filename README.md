@@ -4,3 +4,6 @@
 [![Maintainability](https://api.codeclimate.com/v1/badges/784f0213c7183f494d1d/maintainability)](https://codeclimate.com/github/sharkvoice/python-project-lvl1/maintainability)
 ##
 First project in the Hexlet Python Developer profession by student Dmitry Klimenko.
+##
+To install and run in bash:
+[![asciicast](https://asciinema.org/a/vKZQHGGDRjtyvWaxpR34U9AoD.svg)](https://asciinema.org/a/vKZQHGGDRjtyvWaxpR34U9AoD)
