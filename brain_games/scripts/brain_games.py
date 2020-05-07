@@ -1,8 +1,8 @@
 # -*- coding:utf-8 -*-
 
-"""
-Example script for Brain Games, greets user by name,
-but there's no game after that.
+"""Example script for Brain Games.
+
+Greets user by name, but there's no game after that.
 """
 
 from brain_games.cli import welcome_user
