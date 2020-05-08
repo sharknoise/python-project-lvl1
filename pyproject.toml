@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "SHARKVOICE_brain_games"
-version = "0.1.5"
+version = "0.1.6"
 description = ""
 authors = ["sharkvoice <sharknoise@gmail.com>"]
 packages = [
@@ -10,6 +10,7 @@ packages = [
 [tool.poetry.scripts]
 brain-games = "brain_games.scripts.brain_games:main"
 brain-even = "brain_games.scripts.brain_even:main"
+brain-calc = "brain_games.scripts.brain_calc:main"
 
 [tool.poetry.dependencies]
 python = "^3.6"
