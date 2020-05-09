@@ -10,7 +10,7 @@ To install, copy the following into terminal:
 python3 -m pip install --user -i https://test.pypi.org/simple/ sharkvoice-brain-games
 ```
 To play, type the game name in the terminal:  
-[![asciicast](https://asciinema.org/a/vKZQHGGDRjtyvWaxpR34U9AoD.svg)](https://asciinema.org/a/vKZQHGGDRjtyvWaxpR34U9AoD)
+[![asciicast](https://asciinema.org/a/vKZQHGGDRjtyvWaxpR34U9AoD.svg)](https://asciinema.org/a/vKZQHGGDRjtyvWaxpR34U9AoD)  
 The full list of games:  
 brain-even  
 brain-calc  
