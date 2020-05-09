@@ -1,15 +1,15 @@
 # -*- coding:utf-8 -*-
 # !/usr/bin/env python3
 
-"""A game: answer if a random number is even."""
+"""A game: find the greatest common divisor."""
 
 from brain_games.cli import play
-from brain_games.games import even
+from brain_games.games import gcd
 
 
 def main():
-    """Run the brain-even game in terminal."""
-    play(even)
+    """Run the brain-gcd game in terminal."""
+    play(gcd)
 
 
 # Check if the module runs as a program.

@@ -17,7 +17,7 @@ def is_even(number: int) -> bool:
     return number % 2 == 0
 
 
-def create_question(maxnum=100) -> Tuple[str, str]:
+def create_question(maxnum=100) -> Tuple[int, str]:
     """Show a random number, ask the user if the number is even.
 
     Args:
@@ -30,4 +30,4 @@ def create_question(maxnum=100) -> Tuple[str, str]:
     # use randint "for security/cryptographic purposes".
     random_number = randint(1, maxnum)  # noqa: S311
     true_answer = 'yes' if is_even(random_number) else 'no'
-    return str(random_number), true_answer
+    return random_number, true_answer

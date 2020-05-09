@@ -23,9 +23,22 @@ def welcome_user(rules=None) -> str:
     if rules is not None:
         print('{0}\n'.format(rules))
 
-    username = prompt.string('May I have your name? ')
-    print('Hello, {0}!\n'.format(username))
+    username = prompt.string('May I have your name? ', empty=True)
+    if username is None:
+        quit_when_silent()
+    else:
+        print('Hello, {0}!\n'.format(username))
     return username
+
+
+def quit_when_silent() -> None:
+    """Quit when the user is silent.
+
+    If the user only presses Enter with no real answer,
+    we end the game instead of endlessly repeating the prompt.
+    """
+    print('We can play later if you want.')
+    quit()
 
 
 def play(game, questions=3) -> None:
@@ -42,13 +55,19 @@ def play(game, questions=3) -> None:
 
     while questions > 0:
         question, correct_answer = game.create_question()
-
         print('Question: {0}'.format(question))
-        users_answer = prompt.string('Your answer: ')
 
-        if users_answer == correct_answer:
+        # Answer to some games may be an integer, but
+        # we always get users_answer as a string
+        # because the prompt package doesn't have
+        # an easy way to get int OR string
+        users_answer = prompt.string('Your answer: ', empty=True)
+        # That's why we compare it to str(correct_answer)
+        if users_answer == str(correct_answer):
             print('Correct!')
             questions -= 1
+        elif users_answer is None:
+            quit_when_silent()
         else:
             # We split this print into several lines to stay < 80 symbols.
             # We do it via explicit concatenation to follow WPS 326.
