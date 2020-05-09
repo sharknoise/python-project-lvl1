@@ -9,7 +9,9 @@ To install the package, copy the following into terminal:
 ```
 python3 -m pip install --user -i https://test.pypi.org/simple/ sharkvoice-brain-games
 ```
-To play, type a game name in the terminal. 
+To play, type a game name in the terminal.
+
+Example:
 [![asciicast](https://asciinema.org/a/vKZQHGGDRjtyvWaxpR34U9AoD.svg)](https://asciinema.org/a/vKZQHGGDRjtyvWaxpR34U9AoD)  
 List of games included in the package:  
 brain-even  
