@@ -5,7 +5,7 @@
 ##
 First project in the Hexlet Python Developer profession by student Dmitry Klimenko.
 ##
-To install, copy the following into terminal:  
+To install the package, copy the following into terminal:  
 ```
 python3 -m pip install --user -i https://test.pypi.org/simple/ sharkvoice-brain-games
 ```
