@@ -17,3 +17,4 @@ List of games included in the package:
 brain-even  
 brain-calc  
 brain-gcd  
+brain-progression
