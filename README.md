@@ -13,3 +13,4 @@ The full list of games:
 brain-even
 brain-calc
 brain-gcd
+brain-progression
