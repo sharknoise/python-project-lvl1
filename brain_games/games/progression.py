@@ -17,7 +17,7 @@ def create_question(length=10, max_start=5, max_step=5) -> Tuple[str, str]:
         max_step: maximum value of the random step
 
     Returns:
-        the progression and the hidden member
+        the progression, the hidden member
     """
     step = randint(1, max_step)
     start = randint(1, max_start)

@@ -1,5 +1,4 @@
 # -*- coding:utf-8 -*-
-# !/usr/bin/env python3
 
 """A game: name a member of an arithmetic progression."""
 

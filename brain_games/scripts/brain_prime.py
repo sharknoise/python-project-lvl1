@@ -1,14 +1,14 @@
 # -*- coding:utf-8 -*-
 
-"""A game: calculate the result of an expression."""
+"""A game: answer if a random number is prime."""
 
 from brain_games.cli import play
-from brain_games.games import calc
+from brain_games.games import prime
 
 
 def main():
-    """Run the brain-calc game in terminal."""
-    play(calc)
+    """Run the brain-prime game in terminal."""
+    play(prime)
 
 
 # Check if the module runs as a program.

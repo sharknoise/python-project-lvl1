@@ -3,12 +3,14 @@
 """Command Line Interface module, contains functions to interact with users."""
 
 
+from types import ModuleType
+
 import prompt
 
 
-def welcome_user(rules=None) -> str:
+def welcome_user(rules: str = None) -> str:
     """
-    Greet the user, print the rules, ask user's name.
+    Greet the user, print the rules, ask for user's name.
 
     Args:
         rules: the rules of the game (if there are any)
@@ -18,8 +20,6 @@ def welcome_user(rules=None) -> str:
     """
     print('Welcome to the Brain Games!\n')
 
-    # Task in step 5 adds a line about game rules
-    # after "Welcome..."" but before "May I have...".
     if rules is not None:
         print('{0}\n'.format(rules))
 
@@ -34,14 +34,14 @@ def welcome_user(rules=None) -> str:
 def quit_when_silent() -> None:
     """Quit when the user is silent.
 
-    If the user only presses Enter with no real answer,
+    If the user only presses Enter without a real answer,
     we end the game instead of endlessly repeating the prompt.
     """
     print('We can play later if you want.')
     quit()
 
 
-def play(game, questions=3) -> None:
+def play(game: ModuleType, questions=3) -> None:
     """Run the game logic.
 
     Args:
@@ -58,7 +58,7 @@ def play(game, questions=3) -> None:
         print('Question: {0}'.format(question))
 
         # Answer to some games may be an integer, but
-        # we always get users_answer as a string
+        # we always get user's answer as a string
         # because the prompt package doesn't have
         # an easy way to get int OR string
         users_answer = prompt.string('Your answer: ', empty=True)
