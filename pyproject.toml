@@ -1,8 +1,13 @@
 [tool.poetry]
 name = "SHARKVOICE_brain_games"
-version = "0.2.1"
-description = ""
+version = "0.2.2"
+description = "Several text-based terminal games that check your mental arithmetic skill."
+classifiers = [
+  "Environment :: Console",
+  "Topic :: Games/Entertainment"
+]
 authors = ["sharkvoice <sharknoise@gmail.com>"]
+repository = "https://github.com/sharkvoice/python-project-lvl1"
 packages = [
   {include = "brain_games"},
 ]

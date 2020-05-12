@@ -14,7 +14,8 @@ def is_prime(number: int) -> bool:
     # noqa: DAR101
     # noqa: DAR201
     """
-    # Corner cases.
+    # To avoid unnecessary time complexity we check the
+    # easiest cases before starting a while loop.
     if number == 1:
         return False
     if number in {2, 3}:
@@ -32,6 +33,7 @@ def is_prime(number: int) -> bool:
         if (number % divisor == 0 or number % (divisor + 2) == 0):
             return False
         divisor += 6
+
     return True
 
 
