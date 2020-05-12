@@ -7,12 +7,12 @@ First project in the Hexlet Python Developer profession by student Dmitry Klimen
 ##
 To install the package, copy the following into the terminal:  
 ```
-python3 -m pip install --user -i https://test.pypi.org/simple/ --extra-index-url https://pypi.org/simple sharkvoice-brain-games==0.2.2
+python3 -m pip install --user -i https://test.pypi.org/simple/ --extra-index-url https://pypi.org/simple sharkvoice-brain-games==0.2.3
 ```
 To play, type a game name in the terminal.
 
 Example:  
-[![asciicast](https://asciinema.org/a/2Epx3FsFN3BIg2YYyUtpTBZeo.svg)](https://asciinema.org/a/2Epx3FsFN3BIg2YYyUtpTBZeo)  
+[![asciicast](https://asciinema.org/a/aeAohNcwE669hN3yF4DmVKhSp.svg)](https://asciinema.org/a/aeAohNcwE669hN3yF4DmVKhSp)  
   
 List of games included in the package:  
 
