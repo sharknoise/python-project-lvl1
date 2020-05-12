@@ -5,17 +5,23 @@
 ##
 First project in the Hexlet Python Developer profession by student Dmitry Klimenko.
 ##
-To install the package, copy the following into terminal:  
+To install the package, copy the following into the terminal:  
 ```
-python3 -m pip install --user -i https://test.pypi.org/simple/ --extra-index-url https://pypi.org/simple sharkvoice-brain-games==0.1.9
+python3 -m pip install --user -i https://test.pypi.org/simple/ --extra-index-url https://pypi.org/simple sharkvoice-brain-games==0.2.1
 ```
 To play, type a game name in the terminal.
 
 Example:  
 [![asciicast](https://asciinema.org/a/2Epx3FsFN3BIg2YYyUtpTBZeo.svg)](https://asciinema.org/a/2Epx3FsFN3BIg2YYyUtpTBZeo)  
+  
 List of games included in the package:  
-brain-even  
-brain-calc  
-brain-gcd  
-brain-progression  
-brain-prime
+
+* brain-even [(how to play)](https://asciinema.org/a/Qf0NZ9buDGsNCPuuK6S1mE7ah)  
+  
+* brain-calc [(how to play)](https://asciinema.org/a/bXpv2TOF8ZSodCcrGL0PZouo9)  
+  
+* brain-gcd [(how to play)](https://asciinema.org/a/4VFOAxfTZypH4o398L6wMXohe)  
+  
+* brain-progression [(how to play)](https://asciinema.org/a/dvvaL3zoiNTVzr8FjuQy6An7Z)  
+  
+* brain-prime [(how to play)](https://asciinema.org/a/RRuDvKuB7Mgg5zGxYnWswT1qK)

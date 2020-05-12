@@ -14,19 +14,19 @@ def is_prime(number: int) -> bool:
     # noqa: DAR101
     # noqa: DAR201
     """
-    # Corner cases
+    # Corner cases.
     if number == 1:
         return False
-    if number == 2 or 3:
+    if number in {2, 3}:
         return True
 
     # Most numbers > 3 aren't prime because their third
-    # divisor is either 2 or 3
+    # divisor is either 2 or 3.
     if (number % 2 == 0 or number % 3 == 0):
         return False
 
     # Finally, we loop through the rest of potential
-    # prime divisors 5, 7, 11, 13 ... up to √number
+    # prime divisors 5, 7, 11, 13 ... up to √number.
     divisor = 5
     while (divisor * divisor <= number):
         if (number % divisor == 0 or number % (divisor + 2) == 0):

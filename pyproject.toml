@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "SHARKVOICE_brain_games"
-version = "0.1.9"
+version = "0.2.1"
 description = ""
 authors = ["sharkvoice <sharknoise@gmail.com>"]
 packages = [
