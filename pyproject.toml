@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "SHARKVOICE_brain_games"
-version = "0.2.3"
+version = "0.2.4"
 description = "Several text-based terminal games that check your mental arithmetic skill."
 classifiers = [
   "Environment :: Console",
