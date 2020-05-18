@@ -17,7 +17,7 @@ def create_round(length=10, max_start=5, max_step=5) -> Tuple[str, str]:
         max_step: maximum value of the random step
 
     Returns:
-        the progression, the hidden member
+        the progression as string ready to be printed, the hidden member
     """
     step = randint(1, max_step)
     start = randint(1, max_start)
@@ -27,5 +27,5 @@ def create_round(length=10, max_start=5, max_step=5) -> Tuple[str, str]:
     hidden_member_index = randint(0, length - 1)
     true_answer = progression[hidden_member_index]
     progression[hidden_member_index] = '..'
-    progression_string = ' '.join(progression)
-    return progression_string, true_answer
+    question = ' '.join(progression)
+    return question, true_answer
