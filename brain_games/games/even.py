@@ -5,7 +5,7 @@
 from random import randint
 from typing import Tuple
 
-RULESET = ('Answer "yes" if a number is even, otherwise answer "no".')
+RULE = ('Answer "yes" if a number is even, otherwise answer "no".')
 
 
 def is_even(number: int) -> bool:

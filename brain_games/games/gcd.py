@@ -8,7 +8,7 @@ from math import gcd
 from random import randint
 from typing import Tuple
 
-RULESET = ('Find the greatest common divisor of given numbers.')
+RULE = ('Find the greatest common divisor of given numbers.')
 
 
 def create_round(max_number=50) -> Tuple[str, str]:

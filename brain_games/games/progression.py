@@ -5,7 +5,7 @@
 from random import randint
 from typing import Tuple
 
-RULESET = ('What number is missing in the progression?')
+RULE = ('What number is missing in the progression?')
 
 
 def create_round(length=10, max_start=5, max_step=5) -> Tuple[str, str]:

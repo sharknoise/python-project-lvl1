@@ -5,7 +5,7 @@
 from random import randint
 from typing import Tuple
 
-RULESET = ('Answer "yes" if the number is prime. Otherwise answer "no".')
+RULE = ('Answer "yes" if the number is prime. Otherwise answer "no".')
 
 
 def is_prime(number: int) -> bool:

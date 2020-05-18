@@ -8,21 +8,21 @@ from types import ModuleType
 import prompt
 
 
-def welcome_user(rules: str = None) -> str:
+def print_intro(rule: str = None):
     """
-    Greet the user, print the rules, ask for user's name.
+    Greet the user and print the rules.
 
     Args:
-        rules: the rules of the game (if there are any)
-
-    Returns:
-        str: the name entered by the user (we need it later in games)
+        rule: the rules of the game (if there are any)
     """
     print('Welcome to the Brain Games!\n')
 
-    if rules is not None:
-        print('{0}\n'.format(rules))
+    if rule is not None:
+        print('{0}\n'.format(rule))
 
+
+def ask_username() -> str:
+    """Asks for user's name, greets the user by it."""
     username = prompt.string('May I have your name? ', empty=True)
     if username is None:
         quit_when_silent()
@@ -48,7 +48,8 @@ def play(game: ModuleType, round_count=3) -> None:
         game: which of the brain games to run
         round_count: how many questions to ask
     """
-    username = welcome_user(game.RULESET)
+    print_intro(game.RULES)
+    username = ask_username()
 
     while round_count > 0:
         # All answers returned by game modules should be

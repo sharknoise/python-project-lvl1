@@ -6,7 +6,7 @@ from operator import add, mul, sub
 from random import choice, randint
 from typing import Tuple
 
-RULESET = ('What is the result of the expression?')
+RULE = ('What is the result of the expression?')
 
 
 def create_round(max_number=20) -> Tuple[str, str]:
