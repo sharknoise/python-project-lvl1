@@ -7,7 +7,7 @@ First project in the Hexlet Python Developer profession by student Dmitry Klimen
 ##
 To install the package, copy the following into the terminal:  
 ```
-python3 -m pip install --user -i https://test.pypi.org/simple/ --extra-index-url https://pypi.org/simple sharkvoice-brain-games==0.2.3
+python3 -m pip install --user -i https://test.pypi.org/simple/ --extra-index-url https://pypi.org/simple sharkvoice-brain-games==0.2.4
 ```
 To play, type a game name in the terminal.
 
