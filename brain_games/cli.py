@@ -48,7 +48,7 @@ def play(game: ModuleType, round_count=3) -> None:
         game: which of the brain games to run
         round_count: how many questions to ask
     """
-    print_intro(game.RULES)
+    print_intro(game.RULE)
     username = ask_username()
 
     while round_count > 0:
