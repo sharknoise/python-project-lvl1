@@ -5,10 +5,10 @@
 from random import randint
 from typing import Tuple
 
-RULES = ('What number is missing in the progression?')
+RULESET = ('What number is missing in the progression?')
 
 
-def create_question(length=10, max_start=5, max_step=5) -> Tuple[str, str]:
+def create_round(length=10, max_start=5, max_step=5) -> Tuple[str, str]:
     """Generate an arithmetic progression with a hidden member.
 
     Args:

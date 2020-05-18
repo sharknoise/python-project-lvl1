@@ -41,31 +41,26 @@ def quit_when_silent() -> None:
     quit()
 
 
-def play(game: ModuleType, questions=3) -> None:
+def play(game: ModuleType, round_count=3) -> None:
     """Run the game logic.
 
     Args:
         game: which of the brain games to run
-        questions: how many questions to ask
-
-    Returns:
-        None
+        round_count: how many questions to ask
     """
-    username = welcome_user(game.RULES)
+    username = welcome_user(game.RULESET)
 
-    while questions > 0:
-        question, correct_answer = game.create_question()
+    while round_count > 0:
+        # All answers returned by game modules should be
+        # strings because we'll be comparing them
+        # with strings typed by user.
+        question, correct_answer = game.create_round()
         print('Question: {0}'.format(question))
 
-        # Answer to some games may be an integer, but
-        # we always get user's answer as a string
-        # because the prompt package doesn't have
-        # an easy way to get int OR string
         users_answer = prompt.string('Your answer: ', empty=True)
-        # That's why we compare it to str(correct_answer)
-        if users_answer == str(correct_answer):
+        if users_answer == correct_answer:
             print('Correct!')
-            questions -= 1
+            round_count -= 1
         elif users_answer is None:
             quit_when_silent()
         else:
@@ -79,6 +74,6 @@ def play(game: ModuleType, questions=3) -> None:
             )
             print("Let's try again, {0}!".format(username))
             # Task in step 5 says that the game ends after one wrong answer.
-            return None
+            quit()
 
     print('Congratulations, {0}!'.format(username))

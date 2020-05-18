@@ -8,10 +8,10 @@ from math import gcd
 from random import randint
 from typing import Tuple
 
-RULES = ('Find the greatest common divisor of given numbers.')
+RULESET = ('Find the greatest common divisor of given numbers.')
 
 
-def create_question(max_number=50) -> Tuple[str, int]:
+def create_round(max_number=50) -> Tuple[str, str]:
     """Show two random numbers, ask what's their greatest common divisor.
 
     Args:
@@ -19,9 +19,10 @@ def create_question(max_number=50) -> Tuple[str, int]:
 
     Returns:
         the question string, the correct answer
+        as strings, because the game engine only accepts strings
     """
     random_number1 = randint(1, max_number)
     random_number2 = randint(1, max_number)
     true_answer = int(gcd(random_number1, random_number2))
     question = '{0} {1}'.format(random_number1, random_number2)
-    return question, true_answer
+    return question, str(true_answer)

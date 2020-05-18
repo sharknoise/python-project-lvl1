@@ -5,7 +5,7 @@
 from random import randint
 from typing import Tuple
 
-RULES = ('Answer "yes" if a number is even, otherwise answer "no".')
+RULESET = ('Answer "yes" if a number is even, otherwise answer "no".')
 
 
 def is_even(number: int) -> bool:
@@ -17,7 +17,7 @@ def is_even(number: int) -> bool:
     return number % 2 == 0
 
 
-def create_question(max_number=100) -> Tuple[int, str]:
+def create_round(max_number=100) -> Tuple[str, str]:
     """Show a random number, ask the user if the number is even.
 
     Args:
@@ -25,7 +25,9 @@ def create_question(max_number=100) -> Tuple[int, str]:
 
     Returns:
         the number, the correct answer to the question
+        as strings, because the game engine only accepts strings
     """
     random_number = randint(1, max_number)
     true_answer = 'yes' if is_even(random_number) else 'no'
-    return random_number, true_answer
+    question = str(random_number)
+    return question, true_answer

@@ -5,7 +5,7 @@
 from random import randint
 from typing import Tuple
 
-RULES = ('Answer "yes" if the number is prime. Otherwise answer "no".')
+RULESET = ('Answer "yes" if the number is prime. Otherwise answer "no".')
 
 
 def is_prime(number: int) -> bool:
@@ -16,7 +16,7 @@ def is_prime(number: int) -> bool:
     """
     # To avoid unnecessary time complexity we check the
     # easiest cases before starting a while loop.
-    if number == 1:
+    if number <= 1:
         return False
     if number in {2, 3}:
         return True
@@ -37,15 +37,20 @@ def is_prime(number: int) -> bool:
     return True
 
 
-def create_question(max_number=100) -> Tuple[int, str]:
-    """Show a random number, ask the user if the number is even.
+def create_round(min_number=2, max_number=100) -> Tuple[str, str]:
+    """Show a random number, ask the user if the number is prime.
 
     Args:
+        min_number: mininum random number
+            setting it to 1 or lower will test if the user
+            remembers the full definition of prime numbers
         max_number: maximum random number
 
     Returns:
         the number, the correct answer to the question
+        as strings, because the game engine only accepts strings
     """
-    random_number = randint(1, max_number)
+    random_number = randint(min_number, max_number)
     true_answer = 'yes' if is_prime(random_number) else 'no'
-    return random_number, true_answer
+    question = str(random_number)
+    return question, true_answer
